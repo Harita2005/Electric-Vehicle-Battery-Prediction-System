@@ -1,0 +1,15 @@
+artifact_uri: file:///d:/Electric_Vechical/mlruns/480586768318843081/e05da6cc7cd24c25abd07f14bfafe1fc/artifacts
+end_time: 1764863241563
+entry_point_name: ''
+experiment_id: '480586768318843081'
+lifecycle_stage: active
+run_id: e05da6cc7cd24c25abd07f14bfafe1fc
+run_name: shivering-horse-610
+run_uuid: e05da6cc7cd24c25abd07f14bfafe1fc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764863238709
+status: 4
+tags: []
+user_id: TempAdmin

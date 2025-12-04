@@ -1,0 +1,25 @@
+{
+  "total_vehicles": 5,
+  "total_records": 525600,
+  "date_range": {
+    "start": "2020-04-15T00:00:00",
+    "end": "2021-10-20T23:55:00"
+  },
+  "soh_distribution": {
+    "mean": 96.46995422748584,
+    "std": 2.1717455004073294,
+    "min": 90.83390805108684,
+    "max": 100.0
+  },
+  "rul_distribution": {
+    "mean": 183.0,
+    "std": 105.36612891516336,
+    "min": 1.0,
+    "max": 365.0
+  },
+  "edge_cases": {
+    "sensor_dropouts": 508,
+    "fast_charge_sessions": 76525,
+    "extreme_temps": 12082
+  }
+}
