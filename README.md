@@ -6,19 +6,19 @@
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![AWS CDK](https://img.shields.io/badge/AWS-CDK-orange.svg)](https://aws.amazon.com/cdk/)
 
-## 🎯 Overview
+##  Overview
 
 This system provides end-to-end battery health prediction for electric vehicle fleets, combining realistic data simulation, advanced ML models, explainable AI, and production deployment on AWS. Perfect for fleet operators, OEMs, and battery manufacturers.
 
 ### Key Features
-- 📊 **Realistic Data Simulation**: Physics-based battery degradation with 1000+ vehicles
-- 🤖 **Advanced ML Models**: XGBoost + LSTM with uncertainty quantification
-- 🔍 **Explainable AI**: SHAP explanations and counterfactual analysis
-- 📱 **Interactive Dashboard**: React app with real-time monitoring
-- ☁️ **Production Deployment**: AWS infrastructure with auto-scaling
-- 📈 **MLOps Pipeline**: Drift detection and automated retraining
+-  **Realistic Data Simulation**: Physics-based battery degradation with 1000+ vehicles
+-  **Advanced ML Models**: XGBoost + LSTM with uncertainty quantification
+-  **Explainable AI**: SHAP explanations and counterfactual analysis
+-  **Interactive Dashboard**: React app with real-time monitoring
+-  **Production Deployment**: AWS infrastructure with auto-scaling
+-  **MLOps Pipeline**: Drift detection and automated retraining
 
-## 🏗️ Architecture
+##  Architecture
 
 ```
 Data Flow: Simulator → S3 → Feature Engineering → Models → Dashboard → Monitoring
@@ -28,7 +28,7 @@ Data Flow: Simulator → S3 → Feature Engineering → Models → Dashboard →
                                Model Registry → API → Auto Retraining
 ```
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Local Development
 ```bash
@@ -63,43 +63,43 @@ cdk deploy EVBatteryStack
 python deploy_models.py
 ```
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
-├── 📊 simulator/           # Synthetic BMS data generation
+├──  simulator/           # Synthetic BMS data generation
 │   ├── generate_data.py    # Main data simulator
 │   └── README.md          # Simulator documentation
-├── 🔧 data_pipeline/       # Feature engineering & preprocessing  
+├──  data_pipeline/       # Feature engineering & preprocessing  
 │   ├── feature_engineering.py
 │   └── preprocessing.py
-├── 🤖 models/              # ML models and training
+├──  models/              # ML models and training
 │   ├── train_baseline.py   # XGBoost model
 │   ├── train_sequence.py   # LSTM model
 │   ├── api.py             # FastAPI server
 │   └── artifacts/         # Saved models
-├── 📈 evaluation/          # Model evaluation & metrics
+├──  evaluation/          # Model evaluation & metrics
 │   ├── model_evaluation.ipynb
 │   └── ablation_studies.py
-├── 🔍 explainability/      # SHAP explanations
+├──  explainability/      # SHAP explanations
 │   ├── shap_explainer.py
 │   └── counterfactuals.py
-├── 📱 dashboard/           # React frontend
+├──  dashboard/           # React frontend
 │   ├── src/components/
 │   ├── src/pages/
 │   └── package.json
-├── ☁️ deployment/          # AWS infrastructure
+├──  deployment/          # AWS infrastructure
 │   ├── app.py             # CDK stack
 │   ├── lambda/            # Lambda functions
 │   └── cdk.json
-├── 📊 monitoring/          # Drift detection & alerts
+├──  monitoring/          # Drift detection & alerts
 │   ├── drift_detection.py
 │   └── dashboards/
-├── 🧪 tests/              # Unit tests
-├── 🎬 demo/               # Demo scripts
-└── 📚 docs/               # Documentation
+├──  tests/              # Unit tests
+├──  demo/               # Demo scripts
+└──  docs/               # Documentation
 ```
 
-## 🎯 Business Impact
+##  Business Impact
 
 | Metric | Impact |
 |--------|--------|
@@ -109,7 +109,7 @@ python deploy_models.py
 | **Customer Satisfaction** | Proactive maintenance and transparent health metrics |
 | **Fleet Efficiency** | Data-driven maintenance scheduling |
 
-## 🔬 Technical Highlights
+##  Technical Highlights
 
 ### Data Simulation
 - **Realistic Physics**: Calendar aging, cycle aging, thermal stress
@@ -134,7 +134,7 @@ python deploy_models.py
 - **Monitoring**: CloudWatch dashboards + custom metrics
 - **MLOps**: Automated drift detection and retraining
 
-## 📊 Model Performance
+##  Model Performance
 
 | Model | MAE | RMSE | R² | Coverage (90%) |
 |-------|-----|------|----|--------------|
@@ -142,7 +142,7 @@ python deploy_models.py
 | LSTM Sequence | 1.62% | 2.01% | 0.94 | 91% |
 | Ensemble | 1.54% | 1.89% | 0.95 | 92% |
 
-## 💰 Cost Analysis
+##  Cost Analysis
 
 ### Development Environment
 - **SageMaker Notebooks**: ~$50/month
@@ -156,7 +156,7 @@ python deploy_models.py
 - **Monitoring**: CloudWatch (~$10/month)
 - **Total**: ~$80/month for 1000 vehicles
 
-## 🧪 Testing
+##  Testing
 
 ```bash
 # Run all tests
@@ -170,7 +170,7 @@ pytest tests/test_feature_engineering.py -v
 pytest tests/ --cov=. --cov-report=html
 ```
 
-## 📈 Demo
+##  Demo
 
 ### 2-Minute Demo Script
 1. **Data Generation** (30s): Show realistic battery telemetry
@@ -179,9 +179,9 @@ pytest tests/ --cov=. --cov-report=html
 4. **Deployment** (15s): AWS infrastructure and monitoring
 
 ### Live Demo
-🎥 **[Demo Video Link - Coming Soon]**
+ **[Demo Video Link - Coming Soon]**
 
-## 🤝 Contributing
+##  Contributing
 
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
@@ -189,24 +189,13 @@ pytest tests/ --cov=. --cov-report=html
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📄 License
+##  License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - Battery degradation models based on research from NREL and Argonne National Lab
 - SHAP library for explainable AI
 - AWS CDK team for infrastructure as code
 - React and Material-UI communities
-
-## 📞 Support
-
-For questions, issues, or feature requests:
-- 📧 Email: [your-email@domain.com]
-- 💬 Issues: [GitHub Issues](https://github.com/your-repo/issues)
-- 📖 Documentation: [Project Wiki](https://github.com/your-repo/wiki)
-
----
-
-⭐ **Star this repository if you find it useful!**
